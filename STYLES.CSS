@@ -1,0 +1,512 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background-color: #f9f9f9;
+}
+
+/* Encabezado */
+header {
+	background-color: #000000;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+}
+
+.img-logo
+    {
+        width: 20%; /* Reduce el ancho de la imagen a la mitad */
+        height: 35px; /* Establece el alto de la imagen en 100 pixels */
+        object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+      }
+    
+
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav ul li {
+	margin-right: 20px;
+}
+
+header nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* Contenido principal */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2em;
+}
+
+section {
+	background-color: #fff;
+	padding: 2em;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.productos{
+    list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.grid-container {
+    display: grid;
+
+    /* Definir filas / Unidad de medida */
+grid-template-rows:repeat(1, 200px);
+
+width: 100%;
+max-width: 1200px; /* Ancho máximo del grid */
+margin: 0 auto; /* Centrar el grid */
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustar el número de columnas según el ancho */
+grid-gap: 20px; /* Espacio entre elementos */
+
+    grid-template-columns: repeat(4, 330px);
+
+  gap: 25px;
+  /* Gap separa la grilla entre si  */
+
+
+}
+.grid-item {
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%; /* Ancho del elemento */
+    padding: 20px; /* Espacio interno */
+}
+
+
+.slider {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev, .next {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #ccc;
+}
+
+
+
+.j1high{
+    width: 100%; /* Reduce el ancho de la imagen a la mitad */
+    height: 100%; /* Establece el alto de la imagen en 100 pixels */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.grid-container-jordan1{
+    display: grid;
+        /* Definir filas / Unidad de medida */
+grid-template-rows:repeat(4, 200px);
+width: 100%;
+max-width: 1200px; /* Ancho máximo del grid */
+margin: 0 auto; /* Centrar el grid */
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustar el número de columnas según el ancho */
+grid-gap: 20px; /* Espacio entre elementos */
+
+
+grid-template-columns: repeat(3, 330px);
+
+gap: 60px;
+/* Gap separa la grilla entre si  */
+
+
+}
+.grid-item-jordan {
+border: 1px solid rgb(255, 255, 255);
+width: 100%; /* Ancho del elemento */
+padding: 20px; /* Espacio interno */
+}
+
+.travis1high {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+
+}
+.j1hyper{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    margin-top: px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.j1marvel{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.j1pollen{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.j1purple {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.j1rebe{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.j1bred {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.j1green {
+    width: 100%; 
+    height: 100%; 
+    
+    object-fit: cover;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.j1cpurple {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.j1haze {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.j1chicagold{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.j1midnight{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.af1white {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+  }
+
+.grid-container-af1{
+
+    display: grid;
+   
+grid-template-rows:repeat(3, 200px);
+width: 100%;
+max-width: 1200px; /* Ancho máximo del grid */
+margin: 0 auto; /* Centrar el grid */
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustar el número de columnas según el ancho */
+grid-gap: 20px; /* Espacio entre elementos */
+grid-template-columns: repeat(3, 330px);
+gap: 60px;
+
+}
+
+.grid-item-af1 {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%; /* Ancho del elemento */
+    padding: 20px; /* Espacio interno */
+    }
+
+    .air1off{
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+    }
+
+    .air1travis{
+        width: 100%; 
+        height: 100%; 
+        
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+
+    }
+    .air1suprite {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+    }
+    .air1supralck {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .air1uc {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    }
+    .air1love {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    }
+    .air1word {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    }
+    .air1stuss{
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    }
+    .air1paris{
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    }
+
+
+
+.jordan3 {
+    
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    margin-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+.grid-container-j3{
+    display: grid;
+   
+    grid-template-rows:repeat(3, 200px);
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del grid */
+    margin: 0 auto; /* Centrar el grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajustar el número de columnas según el ancho */
+    grid-gap: 20px; /* Espacio entre elementos */
+    
+    
+    grid-template-columns: repeat(3, 330px);
+    
+    gap: 60px;
+}
+.grid-item-j3{
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%; /* Ancho del elemento */
+    padding: 20px; /* Espacio interno */
+}
+
+.j3mockup {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+
+}
+
+.vansknu-red {
+    width: 100%; 
+    height: 99%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover; 
+    
+}
+
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #444;
+}
+
+/* Pie de página */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+	clear: both;
+}
+    
+/* Hacer que el grid se adapte al ancho de la pantalla */
+.grid-container {
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del grid */
+    margin: 0 auto; /* Centrar el grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 20px; 
+  
+ 
+  .grid-item {
+    width: 100%; 
+    padding: 20px; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .grid-container-af1 {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container-af1 {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .grid-container-j3 {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container-j3 {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .grid-container-jordan1 {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid-container-jordan1 {
+      grid-template-columns: 1fr; 
+    }
+  }
+  body {
+    overflow: hidden; 
+  }
+  
+  html {
+    overflow: hidden; 
+  }
+
+  *{
+    @media (max-width: 768px) {
+      /* Estilos para pantallas con un ancho máximo de 768px */
+    }
+    
+    @media (max-width: 480px) {
+      /* Estilos para pantallas con un ancho máximo de 480px */
+    }
+  }
